@@ -1,0 +1,56 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 400px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: #102a43;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  margin-top: 16px;
+  display: flex;
+  gap: 2.5em;
+}
+
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Botão primário */
+.btn-primary {
+  background: linear-gradient(135deg, #00b894, #019875);
+  box-shadow: 0 6px 12px rgba(0, 184, 148, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 184, 148, 0.5);
+}
+
+/* Botão secundário */
+.btn-secondary {
+  background: linear-gradient(135deg, #2f6fdb, #1e54b7);
+  box-shadow: 0 6px 12px rgba(47, 111, 219, 0.4);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(47, 111, 219, 0.5);
+}
+

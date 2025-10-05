@@ -1,0 +1,27 @@
+<div class="field">
+  <label for="phone-number">Phone Number</label>
+
+  <div class="phone-group">
+    <div class="prefix-wrapper">
+      <span *ngIf="flag" class="flag">{{ flag }}</span>
+      <input
+        id="phone-prefix"
+        type="text"
+        class="prefix"
+        [(ngModel)]="prefix"
+        [readonly]="countrySelected"
+        placeholder="+Code"
+      />
+    </div>
+
+    <input
+      id="phone-number"
+      type="tel"
+      class="number"
+      [value]="phoneNumber"
+      (input)="formatPhone($event)"
+      placeholder="Enter your phone number"
+      maxlength="13"
+    />
+  </div>
+</div>
