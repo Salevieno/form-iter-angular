@@ -1,59 +1,51 @@
-# FormIterAngular
+# 🌐 Interactive Forms Example
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
+This project is a **demonstration of two interactive forms** built with Angular, showcasing **reusable components, modularity, and scalability**.  
 
-## Development server
+---
 
-To start a local development server, run:
+## 📝 Overview
 
-```bash
-ng serve
-```
+There are **two forms** in this project:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Simple Form**  
+   - Contains basic fields: First name, Last name, Phone, Country.  
+   - Includes **one interaction**: selecting a country automatically updates the phone prefix.
 
-## Code scaffolding
+2. **Complete Form**  
+   - Includes all fields from the Simple Form plus additional fields such as State, Postal Code, and Preferred Language.  
+   - Additional fields are **also affected by the country selection**, demonstrating multiple interactions.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🔧 Architecture & Reusability
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Each field is a standalone Angular component**.  
+- Components are **reusable across forms**, allowing you to build larger forms easily.  
+- Interactions between fields are **maintained automatically** when components are reused.  
+- This approach ensures **scalability, maintainability, and clean code organization**.  
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🌍 Data & Limitations
 
-To build the project run:
+- The lists of countries and states are **shortened** (but can be easily expanded) since the focus is on **architecture and code organization**.  
+- Phone masks and postal code placeholders are **for demonstration purposes only** and may not be fully accurate.  
+- This project **does not make API calls**; all data is local.  
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🚀 Usage
 
-## Running unit tests
+1. Clone the repository  
+2. Install dependencies:  
+   ```bash
+   npm install
+3. Run the project:
+    ```bash
+    npm run start
+4. Use it in your browser at http://localhost:4200
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📜 Allowed use
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is free to use for anyone, for any legal and ethical purpose. Feel free to study, modify, or integrate it into your own projects.
