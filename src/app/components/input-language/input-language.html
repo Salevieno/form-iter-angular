@@ -1,0 +1,7 @@
+<div class="language-input">
+    <label for="language">Preferred Language</label>
+    <select [(ngModel)]="selectedLanguage" (change)="onChangeLanguage($event)">
+        <option *ngIf=!enabled value="" disabled [selected]="!enabled">Select a country first</option>
+        <option *ngFor="let lang of languages" [value]="lang">{{ lang }}</option>
+    </select>
+</div>

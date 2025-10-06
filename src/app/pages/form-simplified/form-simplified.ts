@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { InputName } from '../../components/input-name/input-name';
+import { RouterLink } from '@angular/router';
 import { InputLastname } from '../../components/input-lastname/input-lastname';
+import { InputName } from '../../components/input-name/input-name';
 import { InputPhone } from '../../components/input-phone/input-phone';
 import { SelectCountry } from '../../components/select-country/select-country';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-form-simplified',

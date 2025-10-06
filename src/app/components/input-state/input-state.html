@@ -1,0 +1,16 @@
+<div class="state-input">
+  <label for="state">State</label>
+  <input
+    type="text"
+    placeholder="Select state"
+    [(ngModel)]="stateName"
+    (focus)="toggleDropdown()"
+    (input)="filterStates(stateName)"
+  />
+
+  <ul class="dropdown" *ngIf="dropdownOpen">
+    <li *ngFor="let state of filteredStates" (click)="selectState(state)">
+      {{ state }}
+    </li>
+  </ul>
+</div>
